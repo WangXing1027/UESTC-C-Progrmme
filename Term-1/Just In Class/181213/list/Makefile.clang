@@ -1,0 +1,11 @@
+CC = clang
+cflags = -Wall -g -fsanitize=address
+
+source = *.c
+target = list
+
+all:
+	$(CC) $(cflags) $(source) -o $(target).exe
+
+clean:
+	del $(target).exe $(target).exp $(target).pdb $(target).lib
