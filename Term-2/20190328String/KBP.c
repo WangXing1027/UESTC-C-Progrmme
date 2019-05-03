@@ -35,7 +35,7 @@ int KBP(char* T, char* P){
 
 int main(){
     char* T = "What's your name?";
-    char* P = "you";
+    char* P = "www";
 
     int i = KBP(T, P);
     printf("%d\n", i);
